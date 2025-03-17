@@ -1,0 +1,18 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 10px;
+    float: right;
+
+}
+
+.box1{
+    background-color: green;
+}
+.box2{
+    background-color: rgb(164, 200, 164);
+}
+.box3{
+    background-color: rgb(83, 20, 161);
+}
