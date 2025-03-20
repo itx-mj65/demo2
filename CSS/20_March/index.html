@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            position: relative;
+        }
+
+        .head_main {
+            background-color: #007aff;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #117df1;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .nav .logo {
+            height: 80px;
+            width: 80px;
+        }
+
+        .logo img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .nav_main ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 23px;
+        }
+
+        .nav_links a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .get_start_btn {
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 20px;
+            background-color: #095db7;
+            color: white;
+        }
+
+
+        .drop_down_main {
+            position: relative;
+        }
+        .drop_down {
+            position: absolute;
+            top: 28px;
+            left: 0;
+            background-color: white;
+            display: none;
+        }
+
+        .drop_down ul {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 12px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .drop_down ul li {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head_main">
+        <nav class="nav">
+            <div class="logo">
+                <img src="../../iluust.png" alt="">
+            </div>
+            <div class="nav_main">
+                <ul>
+                    <li class="nav_links"><a href="#">Click</a></li>
+                    <li class="nav_links"><a href="#">Click</a></li>
+                    <li class="nav_links"><a href="#">Click</a></li>
+                    <li class="nav_links drop_down_main"><a href="#">Click</a>
+                        <div class="drop_down">
+                            <ul>
+                                <li>link</li>
+                                <li>link</li>
+                                <li>link</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav_links"><a href="#">Click</a></li>
+                    <li class="nav_links"><a href="#">Click</a></li>
+                    <li class="nav_links"><a href="#">Click</a></li>
+                    <button class="get_start_btn">Get Started</button>
+                </ul>
+            </div>
+        </nav>
+        <style>
+            .hero_main {
+                display: flex;
+            }
+
+            .hero_main .hero_left,
+            .hero_main .hero_right {
+                width: 50%;
+            }
+
+            .hero_main .hero_left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 80px;
+                gap: 20px;
+            }
+
+            .hero_main .hero_right {
+                padding: 90px;
+            }
+
+            .hero_main .hero_right img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .btns {
+                display: flex;
+                gap: 35px;
+            }
+
+            .play_btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+                gap: 10px;
+            }
+
+            .play_btn svg {
+                width: 30px;
+                height: 30px;
+                fill: white;
+            }
+        </style>
+        <div class="hero_main">
+            <div class="hero_left">
+                <h1>Lorem ipsum, dolor sit amet consectetur</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, distinctio.</p>
+                <div class="btns">
+                    <button class="get_start_btn">Get Stated</button>
+                    <button class="play_btn"> <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                        <p>Watch Video</p>
+                    </button>
+                </div>
+            </div>
+            <div class="hero_right">
+                <img src="../../iluust.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita sunt. Atque veritatis officia cumque eos
+    repellat beatae earum rerum, harum eum, molestias, maxime commodi voluptas minima quod! Aperiam tempore quia quaerat
+    corporis tenetur numquam, a molestias ut veritatis pariatur, velit, adipisci placeat. Eaque, praesentium beatae
+    dolores temporibus facere iste culpa saepe nesciunt eius assumenda officia inventore tempore nemo sapiente cumque
+    corporis tenetur. Quos, quo excepturi! Atque, consectetur soluta. Dicta, nostrum. Qui ipsum soluta cum aut
+    quibusdam, nam dignissimos inventore consectetur, facere minus, rem quasi. Tempora nam et veniam porro nihil eos
+    neque aut inventore ea architecto eum voluptate hic odit, accusamus, voluptates dolore. Temporibus commodi, ipsum
+    incidunt omnis tenetur ipsam fugiat ad consequuntur aspernatur. Aspernatur dicta, iusto, quam laboriosam vitae
+    beatae dolores nam cupiditate itaque, consectetur aliquam! Doloribus, pariatur accusantium! Exercitationem dolor
+    vero corrupti eos unde. Nam dolorum repellendus tempore, laboriosam sequi consequuntur blanditiis eius, libero, quos
+    ducimus molestiae sint reiciendis perferendis? Debitis necessitatibus pariatur voluptatibus aliquam porro culpa
+    commodi fugiat itaque tenetur veritatis asperiores voluptatum ullam provident accusamus perspiciatis eum, inventore
+    libero, minus nam reprehenderit laudantium! Atque quo, eligendi architecto recusandae dignissimos, quos voluptatem
+    illum autem doloremque beatae a ipsam assumenda, corporis adipisci alias voluptate nemo deleniti. Eius, tempore
+    provident asperiores repellat distinctio ipsam iusto error in assumenda voluptatibus dolor voluptate dolorem nam
+    ipsa corrupti dignissimos blanditiis ratione commodi amet ad aliquid perspiciatis eaque! Provident id eligendi
+    exercitationem, et quis nemo ab molestias architecto fuga cumque earum aspernatur, laboriosam incidunt aut optio?
+    Obcaecati, amet dicta perferendis autem numquam officia atque quisquam, ipsa corporis veritatis nihil corrupti! Ea
+    impedit, molestiae doloribus blanditiis eum dolore ipsum error. Sit numquam autem iste tempora harum dicta sapiente
+    in, vero ad quam ut assumenda non, excepturi sint provident blanditiis laborum cupiditate odit magnam nobis
+    incidunt? A, aliquid obcaecati quam iure illo ratione reprehenderit?
+
+
+
+
+</body>
+
+</html>
