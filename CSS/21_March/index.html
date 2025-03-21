@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psedu classes</title>
+    <!-- :first-child     # first child in a parent of its type  -->
+    <!-- :last-child     # Last child in a parent of its type-->
+    <!-- :nth-child()    # we can put any number of child in () like (3) so its work the third child of its own type in a parent from start  -->
+    <!-- :nth-last-child(1)   # we can put any number of child in () like (3) so its work the third child of its own type in a parent from End   -->
+    <!-- :nth-of-type()   #  -->
+    <!-- :nth-last-of-type(1) -->
+    <!-- :only-child -->
+    <!-- :only-of-type -->
+    <!-- :last-of-type -->
+
+    <style>
+        
+
+        input:focus {
+            /* background-color: black; */
+            outline: none;
+            border: 2px solid blue;
+            animation: blink .7s linear;
+            border-radius: 5px;
+            padding: 5px;
+            /* transition:  2s ease-in-out; */
+            transition: all .5s ease-in-out;
+        }
+
+        @keyframes blink {
+            0% {
+                box-shadow: none;
+            }
+
+            50% {
+                box-shadow: 0 0 5px blue;
+            }
+
+            100% {
+                box-shadow: 0 0 50px blue;
+            }
+        }
+
+        /* .para1 p, */
+        /* .para2 p {
+            font-size: 28px;
+            line-height: 24px;
+            margin: 10px; */
+        /* } */
+
+        :is(.para1, .para2) p{
+            font-weight: bold;
+            color: green;
+        }
+
+        p:hover{
+            background-color: yellow;
+            color: aquamarine;
+            transition: all 1s ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="para1">
+        <p>First paragraph</p>
+    </div>
+    <div class="para2">
+        <p>Second paragraph</p>
+    </div>
+
+
+
+    <ul>
+        <li class="nav_link" lang="eng">for english</li>
+        <li class="nav_link" lang="ur">For urdu</li>
+        <li class="nav_link" lang="eng">for english</li>
+        <li class="nav_link abc"></li>
+        <li class="nav_link">link no 4</li>
+        <li class="nav_link" lang="eng">for english</li>
+
+        <li class="nav_link">link no 6</li>
+        <li class="nav_link">link no 7</li>
+    </ul>
+
+    <ul>
+        <li class="nav_link">link no 1</li>
+        <li class="nav_link"></li>
+        <li class="nav_link">link no 3</li>
+        <li class="nav_link">link no 4</li>
+        <li class="nav_link">link no 5</li>
+        <li class="nav_link">link no 6</li>
+        <li class="nav_link">link no 7</li>
+    </ul>
+
+    <div class="para">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+    </div>
+
+    <div>
+        <li class="nav_link">link no Parent 1</li>
+        <p>Lorem, ipsum dolor.</p>
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, nemo.</p>
+    </div>
+
+    <li class="nav_link"></li>
+
+    <div>
+        <li class="nav_link">link no Parent 1</li>
+        <p>Lorem, ipsum dolor.</p>
+        <h1>Lorem, ipsum.</h1>
+        <h1>jhebiu</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, nemo.</p>
+    </div>
+    <div>
+        <li class="nav_link">link no Parent 1</li>
+        <p>Lorem, ipsum dolor.</p>
+        <h1>Lorem, ipsum.</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, nemo.</p>
+    </div>
+
+
+</body>
+
+</html>
