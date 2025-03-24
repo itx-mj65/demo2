@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* transform: translateX(20px); */
+            /* transform: translateY(40px); */
+            /* transform: translate(-50px, 100px); short hand  */
+            /* transform: scale(0.6); */
+            /* transform: rotate(15deg); */
+            transition: transform 1.5s linear;
+            /* transform: skew(30deg , 80deg) ; */
+            animation: tilt 2s linear alternate-reverse;
+            
+           
+            
+        }
+        .div:hover{
+            transform: rotateZ(30deg);
+
+            
+        }
+
+        @keyframes  tilt{
+            50%{
+                transform: translate(30px, -80px);
+            }
+            100%{
+                transform: skew(30deg, 80deg);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="div">
+
+    </div>
+
+</body>
+
+</html>

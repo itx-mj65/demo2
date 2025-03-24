@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psedu classes</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/css/bootstrap.min.css">
+    
     <!-- :first-child     # first child in a parent of its type  -->
     <!-- :last-child     # Last child in a parent of its type-->
     <!-- :nth-child()    # we can put any number of child in () like (3) so its work the third child of its own type in a parent from start  -->
@@ -16,8 +18,6 @@
     <!-- :last-of-type -->
 
     <style>
-        
-
         input:focus {
             /* background-color: black; */
             outline: none;
@@ -50,12 +50,12 @@
             margin: 10px; */
         /* } */
 
-        :is(.para1, .para2) p{
+        :is(.para1, .para2) p {
             font-weight: bold;
             color: green;
         }
 
-        p:hover{
+        p:hover {
             background-color: yellow;
             color: aquamarine;
             transition: all 1s ease-in-out;
@@ -64,7 +64,9 @@
 
 </head>
 
+
 <body>
+    <p class="h2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, quisquam sapiente porro autem hic a, assumenda iusto veritatis placeat molestias quibusdam ullam corporis quo error voluptatum similique, aut nemo debitis?</p>
     <div class="para1">
         <p>First paragraph</p>
     </div>
@@ -87,7 +89,7 @@
     </ul>
 
     <ul>
-        <li class="nav_link">link no 1</li>
+        <li class="nav_link ">link no 1</li>
         <li class="nav_link"></li>
         <li class="nav_link">link no 3</li>
         <li class="nav_link">link no 4</li>
@@ -125,6 +127,7 @@
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, nemo.</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>

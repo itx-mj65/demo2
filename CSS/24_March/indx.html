@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-Classes Example</title>
+    <style>
+        /* Unvisited link */
+        a:link {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Visited link  */
+        a:visited {
+            color: rgb(9, 191, 24);
+            font-style: italic;
+            text-decoration: line-through;
+        }
+
+        /* Active link (when clicked) */
+        a:active {
+            color: red;
+        }
+
+        /* Target pseudo-class */
+        #section:target {
+            background-color: yellow;
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        /* Focus on input */
+        input:focus {
+            border: 2px solid green;
+        }
+
+        /* Disabled button */
+        button:disabled {
+            background-color: #c94c4c;
+            color: #666;
+        }
+
+        /* Checked checkbox */
+        input:checked + label {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Pseudo-Classes Example</h2>
+
+    <a href="#section">Go to Target Section</a>
+    <p><a href="https://example.com">Example Link (Click me!)</a></p>
+
+    <h3>Form Elements</h3>
+    <input type="text" placeholder="Focus me!"><br><br>
+
+    <button disabled>Disabled Button</button><br><br>
+
+    <input type="checkbox" id="check">
+    <label for="check">Checked Checkbox</label>
+
+    <h3 id="section">Target Section</h3>
+    <p>You landed here using the target pseudo-class!</p>
+
+    <section id="vist">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero esse nesciunt voluptatibus quasi earum, iure explicabo tempore laudantium illum dolores officiis. Cumque quasi culpa dolores odit. Quasi esse atque similique!
+    </section>
+
+</body>
+</html>

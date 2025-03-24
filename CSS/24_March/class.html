@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        a:link {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:active {
+            color: rgb(255, 255, 0);
+        }
+
+        a:visited {
+            color: rgb(140, 136, 117);
+            text-decoration:underline ;
+        }
+
+        #para:target {
+            background-color: blue;
+            color: white;
+        }
+        input:focus{
+            background-color: yellow;
+            border: none !important;
+
+        }
+        input:disabled{
+            background-color: rgb(231, 45, 45);
+            color: white;
+           
+            text-decoration: none;
+        }
+        input:checked + label{
+            color: rgb(113, 139, 113);
+            background-color: brown;
+        }
+
+        input[type*="te"]{
+            background-color: green;
+        }
+        input[type="number"]{
+            border-radius: 10px;
+        }
+        input[disabled]{
+            background-color: rgb(175, 175, 175);
+            color: white;
+            border: none;
+            cursor: not-allowed;
+        }
+       a[href*="para"]{
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+ 
+       }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="https://www.w3schools.com/html/tryit.asp?filename=para=tryhtml_no_endtag">Click 2</a>
+        <a href="#p-start">Click 1</a>
+
+
+    </div>
+
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi accusantium rerum magnam ipsam quas, odio
+        nobis cupiditate eius? Dignissimos harum quae unde eligendi cupiditate officia illum in cumque delectus.
+    </p>
+    <label for="name">UserName</label>
+    <input type="number"  id="username">
+
+
+    <form action="">
+        <label for="name">Name</label>
+        <input type="uydtext" id="name">
+        <input type="kjbdektext">
+        <input type="text"  value="Any text"  disabled>
+        <input type="checkbox" id="check">
+        <label for="check">Checked Checkbox</label>
+    </form>
+
+</body>
+
+</html>
