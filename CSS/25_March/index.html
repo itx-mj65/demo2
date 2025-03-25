@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        .container {
+            height: 90vh;
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            background-color: blueviolet;
+        }
+        .container h1, .container p{
+            color: white;
+            text-align: center;
+        }
+
+
+
+        @media (min-width:600px)  and  (max-width:800px){
+            .container h1, .container p{
+            color: rgb(207, 79, 79);
+            text-align: right;
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis velit ab itaque! Eum reprehenderit delectus dicta saepe praesentium recusandae?</p>
+    </div>
+    
+</body>
+</html>
