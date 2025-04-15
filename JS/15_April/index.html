@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        const ret = function (p1) {
+
+            return (p1 / 3);
+        }
+
+        const ret1 = p1 => console.log(p1 / 3)
+
+        ret1(288)
+
+        document.write(ret(587))
+
+
+
+
+
+        let num = Number(prompt("enter a number"))
+
+        function table(p1) {
+            let i = 0;
+
+            while (i <= 10) {
+                document.write("<br>" + p1 + " X " + i + " = " + (p1 * i));
+                i++;
+            }
+        }
+
+        table(num)
+
+        let i = 15;
+
+
+        do {
+            document.write(" <br> number " + i)
+            i++;
+        } while (i < 10);
+
+
+    </script>
+</body>
+
+</html>
